@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.HomeController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="460.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="120.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Ha-100px.png" />
+         </image>
+      </ImageView>
+      <GridPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" styleClass="bg-primary" GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-text-fill: white;" text="Sistema de reservas Hotel Alura">
+               <styleClass>
+                  <String fx:value="text-lg" />
+                  <String fx:value="text-bold" />
+               </styleClass>
+            </Label>
+            <Label fx:id="labelDateNow" maxWidth="1.7976931348623157E308" style="-fx-text-fill: white;" styleClass="text-lg" text="Hoy es 20/12/2000" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="buttonReserve" alignment="TOP_LEFT" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonReserve" styleClass="button-secondary" text="Reserva">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/office.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="buttonSearch" alignment="TOP_LEFT" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonSearch" styleClass="button-secondary" text="Busqueda">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <FlowPane alignment="BOTTOM_LEFT" orientation="VERTICAL" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="buttonSignOut" alignment="BASELINE_LEFT" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonSignOut" prefHeight="32.0" prefWidth="200.0" styleClass="button-secondary" text="Cerrar Sesión">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/sign-out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label styleClass="text-bold" text="Bienvenido" />
+            <Label text="Sistema de reserva del hotel. Controle y administre de forma óptima y fácil el flujo de reserva y huéspedes del hotel." wrapText="true" />
+            <Label text="Esta herramienta le permitirá llevar un control completo y detallado de sus reservas y huespédes, tendrá acceso a herramientas especiales para tareas especificas como lo son:" wrapText="true" />
+            <Label text="- Registro de Reserva y Huéspedes." />
+            <Label text="- Edición de Reservas y Huéspedes existentes." />
+            <Label text="- Eliminar todo tipo de registro." />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</GridPane>

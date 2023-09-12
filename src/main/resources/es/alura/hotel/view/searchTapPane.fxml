@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.TapPaneController">
+    <Tab fx:id="tabHuesped" onSelectionChanged="#tapSelectTableHuesped" text="Huéspedes">
+        <AnchorPane>
+            <fx:include source="tableHuesped.fxml" />
+        </AnchorPane>
+    </Tab>
+    <Tab fx:id="tabReserva" onSelectionChanged="#tapSelectTableReserva" text="Reservas">
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <fx:include source="tableReserva.fxml" />
+        </AnchorPane>
+    </Tab>
+</TabPane>

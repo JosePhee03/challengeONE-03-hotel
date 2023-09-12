@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView onMouseClicked="#handleTableRowSelected" fx:id="tableHuespedes" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.TableHuespedController">
+    <columns>
+        <TableColumn fx:id="columnHuespedId" prefWidth="75.0" text="ID" />
+        <TableColumn fx:id="columnHuespedNombre" prefWidth="75.0" text="Nombre" />
+        <TableColumn fx:id="columnHuespedApellido" prefWidth="75.0" text="Apellido" />
+        <TableColumn fx:id="columnHuespedFechaDeNacimiento" prefWidth="75.0" text="Fecha de Nacimiento" />
+        <TableColumn fx:id="columnHuespedNacionalidad" prefWidth="75.0" text="Nacionalidad" />
+        <TableColumn fx:id="columnHuespedTelefono" prefWidth="75.0" text="Telefono" />
+        <TableColumn fx:id="columnHuespedIdReserva" prefWidth="75.0" text="ID Reserva" />
+    </columns>
+    <columnResizePolicy>
+        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+    </columnResizePolicy>
+</TableView>

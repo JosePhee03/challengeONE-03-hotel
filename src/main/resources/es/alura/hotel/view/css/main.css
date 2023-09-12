@@ -1,0 +1,70 @@
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: Inter;
+
+    -alura-color-primary: #006AF5;
+    -alura-color-secondary: #1B2B41;
+    -alura-color-contrast-05: rgba(25, 59, 103, 0.05);
+    -alura-color-base-dark: #223348;
+}
+
+.button-primary:focused {
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+}
+
+.button {
+    -fx-font-weight: bold;
+    -fx-border-radius: 4;
+    -fx-padding: 8px 14px;
+}
+
+.button-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: -alura-color-secondary;
+}
+
+.button-secondary:hover {
+    -fx-background-color: -alura-color-contrast-05;
+}
+
+.button-primary {
+    -fx-background-color: -alura-color-primary;
+    -fx-text-fill: white;
+}
+
+.text-bold {
+    -fx-font-weight: bold;
+}
+
+.text-lg {
+    -fx-font-size: 18px;
+}
+
+.text-md {
+    -fx-font-size: 12px;
+}
+
+.text-sm {
+    -fx-font-size: 8px;
+}
+
+.color-secondary {
+    -fx-text-fill: -alura-color-secondary;
+}
+
+.color-primary {
+    -fx-text-fill: -alura-color-primary;
+}
+
+.bg-secondary {
+    -fx-background-color: -alura-color-secondary;
+}
+
+.bg-primary {
+    -fx-background-color: -alura-color-primary;
+}
+
+.bg-base-dark {
+    -fx-background-color: -alura-color-base-dark;
+}

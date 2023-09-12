@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.SearchController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <GridPane vgap="8.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="600.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" prefHeight="48.0" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="32.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" vgrow="NEVER" />
+         <RowConstraints />
+        </rowConstraints>
+        <FlowPane hgap="16.0" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0">
+            <GridPane maxWidth="-Infinity" prefHeight="30.0" prefWidth="600.0">
+                <columnConstraints>
+                    <ColumnConstraints maxWidth="1.7976931348623157E308" minWidth="-Infinity" />
+                    <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="510.0" />
+                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <Label text="Sistema de Búsqueda" GridPane.columnIndex="1">
+                    <styleClass>
+                        <String fx:value="color-primary" />
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-lg" />
+                    </styleClass>
+                </Label>
+                <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                    <Image url="@img/Ha-100px.png" />
+                </ImageView>
+                <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#onButtonBack" styleClass="button-secondary">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@icons/arrow_left.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </GridPane>
+        </FlowPane>
+        <FlowPane alignment="CENTER_RIGHT" hgap="8.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+            <TextField fx:id="inputSearch" maxWidth="-Infinity" prefHeight="32.0" />
+            <Button onAction="#onButtonSearch"  mnemonicParsing="false" styleClass="button-primary" text="Buscar" />
+        </FlowPane>
+        <fx:include source="searchTapPane.fxml" GridPane.rowIndex="2" />
+        <FlowPane alignment="TOP_RIGHT" hgap="16.0" GridPane.rowIndex="3">
+         <Button onAction="#onButtonDelete" mnemonicParsing="false" styleClass="button-primary" text="Eliminar" />
+        </FlowPane>
+    </GridPane>
+</VBox>

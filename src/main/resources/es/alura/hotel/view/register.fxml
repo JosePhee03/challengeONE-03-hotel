@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.RegisterController">
+
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="300.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="500.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <GridPane vgap="16.0" GridPane.columnIndex="1">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="44.0" valignment="BASELINE" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="44.0" />
+                <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" ellipsisString="" prefHeight="62.0" prefWidth="278.0" text="Registro de Huésped">
+                <styleClass>
+                    <String fx:value="color-primary" />
+                    <String fx:value="text-bold" />
+                    <String fx:value="text-lg" />
+                </styleClass>
+            </Label>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0" vgap="4.0" GridPane.rowIndex="1">
+                <Label styleClass="color-secondary" text="Nombre" />
+            <TextField fx:id="inputNombre" prefWidth="200.0" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0" vgap="4.0" GridPane.rowIndex="2">
+                <Label text="Apellido" />
+            <TextField fx:id="inputApellido" prefWidth="200.0" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0" vgap="4.0" GridPane.rowIndex="3">
+                <Label text="Fecha de Nacimiento" />
+                <DatePicker fx:id="inputFechaDeNacimiento" prefWidth="200.0" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0" vgap="4.0" GridPane.rowIndex="4">
+                <Label text="Nacionalidad" />
+                <ComboBox fx:id="inputNacionalidad" prefWidth="200.0" promptText="Seleccionar Nacionalidad" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0" vgap="4.0" GridPane.rowIndex="6">
+                <Label text="Número de Reserva" />
+                <TextField fx:id="inputReservaId" editable="false" prefWidth="200.0" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" prefWrapLength="0.0" vgap="4.0" GridPane.rowIndex="5">
+                <Label text="Teléfono" />
+                <TextField fx:id="inputTelefono" prefWidth="200.0" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefWrapLength="0.0" GridPane.rowIndex="7">
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" />
+                    </rowConstraints>
+                    <Button fx:id="buttonSave" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onButtonSave" styleClass="button-primary" text="Guardar" GridPane.columnIndex="1" />
+                    <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#onButtonBack" styleClass="button-primary" text="Atrás" />
+                </GridPane>
+            </FlowPane>
+        </GridPane>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="bg-primary">
+            <ImageView fitHeight="300.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@img/registro.png" />
+            </ImageView>
+        </VBox>
+    </GridPane>
+</VBox>

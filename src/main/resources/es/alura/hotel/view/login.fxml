@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" pickOnBounds="false" scaleShape="false" spacing="20.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.LoginController">
+
+
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="300.0" prefWidth="83.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="300.0" prefWidth="177.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="400.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <GridPane GridPane.rowIndex="1">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints fillHeight="false" />
+                <RowConstraints fillHeight="false" />
+                <RowConstraints maxHeight="1.7976931348623157E308" valignment="CENTER" vgrow="ALWAYS" />
+            </rowConstraints>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefWrapLength="0.0">
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@img/Ha-100px.png" />
+                </ImageView>
+                <Label styleClass="color-primary, text-lg, text-bold" text="Iniciar Sesión" />
+            </FlowPane>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefWrapLength="50.0" vgap="4.0" GridPane.rowIndex="1">
+                <Label styleClass="color-secondary, text-md" text="Nombre" />
+                <TextField fx:id="inputTextField" prefWidth="180.0" styleClass="color-secondary, text-md" />
+            <padding>
+               <Insets top="8.0" />
+            </padding>
+            </FlowPane>
+            <FlowPane alignment="CENTER" hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefWrapLength="50.0" vgap="4.0" GridPane.rowIndex="2">
+                <Label styleClass="color-secondary, text-md" text="Contraceña" />
+            <PasswordField fx:id="inputPasswordField" prefWidth="180.0" styleClass="color-secondary, text-md" />
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <padding>
+               <Insets top="8.0" />
+            </padding>
+            </FlowPane>
+            <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#onButtonLogin" styleClass="button-primary" text="Iniciar Sesión" GridPane.rowIndex="3" />
+        </GridPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="bg-primary" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+              <ImageView fitHeight="400.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                  <viewport>
+                      <Rectangle2D />
+                  </viewport>
+                  <Image url="@img/img-hotel-login-.png" />
+              </ImageView>
+         </children>
+      </FlowPane>
+    </GridPane>
+</VBox>
