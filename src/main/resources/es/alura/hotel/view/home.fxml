@@ -36,7 +36,7 @@
           <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label style="-fx-text-fill: white;" text="Sistema de reservas Hotel Alura">
+            <Label style="-fx-text-fill: white;" text="Sistema de reservas - Hotel Alura">
                <styleClass>
                   <String fx:value="text-lg" />
                   <String fx:value="text-bold" />
@@ -59,7 +59,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="buttonSearch" alignment="TOP_LEFT" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonSearch" styleClass="button-secondary" text="Busqueda">
+            <Button fx:id="buttonSearch" alignment="TOP_LEFT" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonSearch" styleClass="button-secondary" text="Búsqueda">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>

@@ -8871,3 +8871,41 @@ Constraint "FK2GW3X3440O819HW3QEKGHXT64" already exists; SQL statement:
 	at es.alura.hotel.util.JPAUtil.<clinit>(JPAUtil.java:9)
 	at es.alura.hotel.service.ReservaService.lambda$RegistrarReserva$2(ReservaService.java:27)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-12 15:09:59.679502-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "FK2GW3X3440O819HW3QEKGHXT64" ya existe
+Constraint "FK2GW3X3440O819HW3QEKGHXT64" already exists; SQL statement:
+
+    alter table if exists huespedes 
+       add constraint FK2gw3x3440o819hw3qekghxt64 
+       foreign key (reserva_id) 
+       references res [90045-222]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:111)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:74)
+	at org.h2.command.ddl.AlterTable.update(AlterTable.java:46)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:521)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:450)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:267)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:120)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:275)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$4(SchemaManagementToolCoordinator.java:126)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:123)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:330)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1290)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at es.alura.hotel.util.JPAUtil.<clinit>(JPAUtil.java:9)
+	at es.alura.hotel.service.ReservaService.lambda$RegistrarReserva$2(ReservaService.java:27)
+	at java.base/java.lang.Thread.run(Thread.java:833)

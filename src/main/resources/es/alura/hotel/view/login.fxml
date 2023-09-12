@@ -50,7 +50,7 @@
             </padding>
             </FlowPane>
             <FlowPane alignment="CENTER" hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefWrapLength="50.0" vgap="4.0" GridPane.rowIndex="2">
-                <Label styleClass="color-secondary, text-md" text="Contraceña" />
+                <Label styleClass="color-secondary, text-md" text="Contraseña" />
             <PasswordField fx:id="inputPasswordField" prefWidth="180.0" styleClass="color-secondary, text-md" />
             <opaqueInsets>
                <Insets />
