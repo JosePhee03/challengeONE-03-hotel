@@ -16,7 +16,7 @@ Aplicación Full-Stack Java y JavaFX con base de datos SQL, para gestionar regis
 
 ### Requisitos:
 
-- Login de usuario `admin` y contraceña `admin`.
+- Login de usuario `admin` y contraseña `admin`.
 - Registro de Huéspedes y Reservas del hotel.
 - Ver, eliminar y modificar los registros.
 
