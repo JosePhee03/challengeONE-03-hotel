@@ -3,7 +3,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 
-<TableView onMouseClicked="#handleTableRowSelected" fx:id="tableHuespedes" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.TableHuespedController">
+<TableView fx:id="tableHuespedes" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alura.hotel.controller.TableHuespedController">
     <columns>
         <TableColumn fx:id="columnHuespedId" prefWidth="75.0" text="ID" />
         <TableColumn fx:id="columnHuespedNombre" prefWidth="75.0" text="Nombre" />
