@@ -25,12 +25,12 @@ Aplicación Full-Stack Java y JavaFX con base de datos SQL, para gestionar regis
 1. Clonar repositorio:
 
 ```zsh
-git clone 
+git clone https://github.com/JosePhee03/challengeONE-03-hotel
 ```
 2. Ir al directorio del proyecto:
 
 ```zsh
-cd 
+cd challengeONE-03-hotel
 ```
 3. Ejecutar Maven:
 
