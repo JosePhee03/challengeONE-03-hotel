@@ -1,7 +1,7 @@
 # Alura - Challenge ONE
 
-![Captura desde 2023-09-12 15-23-13](https://github.com/JosePhee03/challengeONE-03-hotel/assets/116127522/798a3d12-3a37-4594-aad6-8b8524a8a5e2)
-![Captura desde 2023-09-12 15-23-42](https://github.com/JosePhee03/challengeONE-03-hotel/assets/116127522/e99c0376-ca8f-492a-992a-7c5ef19a1240)
+![screenshot alura hotel inicio de sesión](https://github.com/JosePhee03/challengeONE-03-hotel/assets/116127522/798a3d12-3a37-4594-aad6-8b8524a8a5e2)
+![screenshot alura hotel registro de huésped](https://github.com/JosePhee03/challengeONE-03-hotel/assets/116127522/e99c0376-ca8f-492a-992a-7c5ef19a1240)
 
 
 https://github.com/JosePhee03/challengeONE-03-hotel/assets/116127522/a8c4f08f-9fe4-4bb1-ac47-e398b690a695
